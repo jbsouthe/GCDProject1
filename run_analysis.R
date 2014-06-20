@@ -13,9 +13,6 @@ if( ! file.exists("UCI HAR Dataset") ) {
   unzip("UCI HAR Dataset.zip") #unzip the archive
 }
 
-#load activity labels for mapping
-
-
 #load test and train y data
 y <- list()
 y$Test <- scan("UCI HAR Dataset/test/y_test.txt", what=integer(0))
